@@ -1,0 +1,13 @@
+connection : HorseDB
+table : CustomerAddress
+fields :
+   AddressId : AddressId
+   CustomerId : CustomerId
+   Province : Province
+   City : City
+   District : District
+   AddressType : AddressType
+   Address : Address
+   AddressX : AddressX
+   AddressY : AddressY
+   UpdateTime : UpdateTime

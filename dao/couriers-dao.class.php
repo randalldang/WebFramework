@@ -1,0 +1,41 @@
+<?php
+class CouriersDao extends BaseDao {
+
+    public function __construct() {
+        parent::__construct();
+    }
+    
+    public function getCouriersById($id) {
+        $couriers = new Couriers();
+        if (empty($id)) {
+          return $couriers;
+        }
+        return $this->selectEntity($couriers, array("id = $id"));
+    }
+    
+    public function getCourierss($pagerOrder) {
+        return $this->selectEntities(new Couriers(), NULL, $pagerOrder);
+    }
+    
+    public function addCouriers($couriers) {
+        if (empty($couriers)) {
+          return;
+        }
+        return $this->insertEntity($couriers);
+    }
+    
+    public function updateCouriers($couriers, $id) {
+        if (empty($couriers) || empty($id)) {
+          return;
+        }
+        return $this->updateEntity($couriers, array("id = $id"));
+    }
+    
+    public function deleteCouriers($id) {
+        if (empty($id)) {
+          return;
+        }
+        return $this->deleteEntities(new Couriers(), array("id = $id"));
+    }
+}
+?>

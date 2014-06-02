@@ -1,0 +1,29 @@
+<?php
+
+include '../include.php';
+
+class OrderSerialAction extends BaseAction {
+
+    private $order_serialService;
+    
+    function __construct() {
+        parent::__construct();
+        $this->order_serialService = new OrderSerialService();
+    }
+
+    function doGet() {
+        $id = $this->get->id;
+        if (!empty($id)) {
+            echo $this->order_serialService->getOrderSerialById($id)->toJson();
+        } else {         
+            echo $this->toJsonArray($this->order_serialService->
+                getOrderSerials($this->getPagerOrder()));
+        }
+    }
+
+    public function doPost(){
+    }
+}
+
+run_admin('OrderSerialAction');
+?>

@@ -1,0 +1,29 @@
+<?php
+//memocache settings;
+$config['memocache_servers'] = array (
+    'servers' => array (
+        'server1' => array (
+            'host' => '127.0.0.1',
+            'port' => '8080',
+            'persistent' => TRUE,
+        ),
+    ),
+);
+
+$config['tt_md5_servers'] = array (
+    'servers' => array (
+        'server1' => array (
+            'host' => '127.0.0.1',
+            'port' => '80',
+            'persistent' => TRUE,
+        ),
+    ),
+);
+
+//cache time settings
+$config['system_default_cache_time'] = 10;
+$config['tt_md5_server_ip'] = '127.0.0.1';
+$config['tt_md5_server_port'] = '80';
+$config['inner_center_server_ip'] = 'http://127.0.0.1';
+
+?>

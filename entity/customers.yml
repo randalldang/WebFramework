@@ -1,0 +1,10 @@
+connection : HorseDB
+table : Customers
+fields :
+   CustomerId : CustomerId
+   CustomerCode : CustomerCode
+   CustomerName : CustomerName
+   CreateTime : CreateTime
+   LastLoginTime : LastLoginTime
+   Status : Status
+   AppType : AppType

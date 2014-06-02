@@ -1,0 +1,9 @@
+connection : HorseDB
+table : CourierRecommend
+fields :
+   RecommendId : RecommendId
+   CourierId : CourierId
+   ReceiveMobile : ReceiveMobile
+   RecommendType : RecommendType
+   RecommendContext : RecommendContext
+   RecommendTime : RecommendTime

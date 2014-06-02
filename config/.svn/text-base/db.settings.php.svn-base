@@ -1,0 +1,9 @@
+<?php
+//database config
+//sample: dbtype://username:password@db_host:port/database_name
+
+$config['db_url']['geefull'] = 'mysql://geefull:blc@127.0.0.1:3306/geefull';
+
+
+$config['db_prefix'] = '';
+?>

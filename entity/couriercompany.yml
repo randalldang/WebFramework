@@ -1,0 +1,10 @@
+connection : HorseDB
+table : CourierCompany
+fields :
+   CompanyId : CompanyId
+   CompanyName : CompanyName
+   Address : Address
+   ServicePhone : ServicePhone
+   CreateTime : CreateTime
+   CreateUserId : CreateUserId
+   Status : Status

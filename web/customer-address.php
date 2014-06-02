@@ -1,0 +1,29 @@
+<?php
+
+include '../include.php';
+
+class CustomerAddressAction extends BaseAction {
+
+    private $customer_addressService;
+    
+    function __construct() {
+        parent::__construct();
+        $this->customer_addressService = new CustomerAddressService();
+    }
+
+    function doGet() {
+        $id = $this->get->id;
+        if (!empty($id)) {
+            echo $this->customer_addressService->getCustomerAddressById($id)->toJson();
+        } else {         
+            echo $this->toJsonArray($this->customer_addressService->
+                getCustomerAddresss($this->getPagerOrder()));
+        }
+    }
+
+    public function doPost(){
+    }
+}
+
+run_admin('CustomerAddressAction');
+?>

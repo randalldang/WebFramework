@@ -1,0 +1,11 @@
+connection : HorseDB
+table : OrderLocation
+fields :
+   LocationId : LocationId
+   LocationType : LocationType
+   LocationProvince : LocationProvince
+   LocationCity : LocationCity
+   LocationDistrict : LocationDistrict
+   LocationX : LocationX
+   LocationY : LocationY
+   LocationAddress : LocationAddress

@@ -1,0 +1,18 @@
+connection : HorseDB
+table : Couriers
+fields :
+   CourierId : CourierId
+   CourierCode : CourierCode
+   CourierName : CourierName
+   Password : Password
+   CompanyId : CompanyId
+   BranchName : BranchName
+   IsShow : IsShow
+   ManagerMobile : ManagerMobile
+   CourierType : CourierType
+   ServiceType : ServiceType
+   Avatar : Avatar
+   RegisterTime : RegisterTime
+   Status : Status
+   Remark : Remark
+   LastLoginTime : LastLoginTime

@@ -1,0 +1,107 @@
+<?php 
+//金融街
+$config['jrj_title'] = '爱购金融网-金融街 房贷 信用卡 车贷 信用贷款 典当产品的热点排行 新品推荐 消费导航，网上金融消费第一站';
+$config['jrj_keyword'] = '房屋贷款,汽车贷款,信用卡,信用贷款申请';
+$config['jrj_description'] = '爱购金融—提供包括银行,典当,担保,民间融资等机构在内的房贷,车贷,信用卡,信用贷款,个人借贷,典当担保等产品的比对,点评,在线申请,超值团购等服务,以及最新利率,计算工具,攻略案例订阅和免费下载,同时提供国内银行业最新最热的超值优惠活动,使网友轻松享受超值金融服务就在爱购金融网';
+
+//乐活坊
+$config['lhf_title'] = '乐活坊-信用卡,车贷,房贷,信用贷款,典当,金融消费攻略技巧尽在爱购金融网';
+$config['lhf_keyword'] = '房屋贷款,汽车贷款,信用卡,信用贷款申请';
+$config['lhf_description'] = '爱购金融,提供包括银行,典当,担保,民间融资等机构在内的房贷,车贷,信用卡,信用贷款,个人借贷,典当担保等产品的比对,点评,在线申请,超值团购等服务,以及最新利率,计算工具,攻略案例订阅和免费下载,同时提供国内银行业最新最热的超值优惠活动,使网友轻松享受超值金融服务就在爱购金融网';
+
+//特惠站
+$config['thz_title'] = '特惠站-积分,优惠,促销,分期,免费赠送等金融优惠促销大全-省钱就到爱购金融网';
+$config['thz_keyword'] = '刷卡优惠,买房贷款,汽车贷款,促销,优惠券,免费';
+$config['thz_description'] = '爱购金融,提供包括银行,典当,担保,民间融资等机构在内的房贷,车贷,信用卡,信用贷款,个人借贷,典当担保等产品的比对,点评,在线申请,超值团购等服务,以及最新利率,计算工具,攻略案例订阅和免费下载,同时提供国内银行业最新最热的超值优惠活动,使网友轻松享受超值金融服务就在爱购金融网';
+
+//信用卡中心
+$config['credit_card_channel_title'] = '信用卡申请中心-信用卡贷款申请,信用卡分期购车申请,信用卡装修分期申请,信用卡办理-国内首家金融服务导购平台';
+$config['credit_card_channel_keyword'] = '信用卡申请,信用卡办理,信用卡分期付款';
+$config['credit_card_channel_description'] = '信用卡,免费申请信用卡,免费申请信用卡分期购车,信用卡分期装修,提供信用卡还款,分期,积分,信用卡优惠活动等查询尽在爱购金融网';
+
+//信用贷款中心
+$config['consume_loan_channel_title'] = '信用贷款-个人无抵押贷款申请服务平台,旅游,消费,创业融资首选';
+$config['consume_loan_channel_keyword'] = '信用贷款,无抵押贷款,小额贷款,信用';
+$config['consume_loan_channel_description'] = '爱购信用贷款-个人无抵押贷款服务平台,提供最新最全的无抵押贷款渠道和产品,实现个人消费,装修,购车,旅游,经营等融资需求';
+
+//房贷中心
+$config['house_loan_channel_title'] = '房屋贷款中心-房屋贷款,房屋抵押贷款,房屋装修贷款申请,提供房贷新政,房贷利率,房贷计算器,公积金贷款查询';
+$config['house_loan_channel_keyword'] = '房屋贷款,房屋抵押贷款,房产装修贷款,房屋贷款利息,房贷计算器';
+$config['house_loan_channel_description'] = '房屋贷款中心-各大银行房屋贷款、房屋抵押贷款,房屋装修贷款,装修分期贷款申请和团购,买房贷款政策,房屋贷款利率,公积金贷款政策查询—爱购金融网';
+
+//车贷中心
+$config['car_loan_channel_title'] = '汽车贷款中心-提供汽车贷款计算器,汽车贷款利率,汽车贷款首付,汽车贷款流程的贷款买车自助服务平台';
+$config['car_loan_channel_keyword'] = '汽车贷款,汽车贷款计算器,汽车贷款利率,汽车贷款流程,买车贷款';
+$config['car_loan_channel_description'] = '提供银行汽车贷款、汽车金融公司贷款、信用卡分期购车等渠道的车贷计算、车贷利率、车贷流程和汽车贷款材料,帮助客户贷款买车-爱购金融网';
+
+//信用卡详情页面
+$config['credit_card_detail_title'] = '信用卡服务详情及开卡申请';
+$config['credit_card_detail_keyword'] = '信用卡申请,信用卡分期付款,信用家装分期,信用卡购车分期';
+$config['credit_card_detail_description'] = '信用卡申请-提供最全面的信用卡费用,分期,还款,积分,增值优惠等信息,帮助客户更透彻的了解各银行信用卡-爱购金融';
+
+//信用贷款详情页面
+$config['consume_loan_detail_title'] = '信用贷款产品及申请';
+$config['consume_loan_detail_keyword'] = '信用贷款,无抵押,无担保';
+$config['consume_loan_detail_description'] = '信用贷款申请-最全面的个人信用贷款产品和服务特色分析,帮助客户快速申请,轻松消费-爱购金融';
+
+//车贷详情页面
+$config['car_loan_detail_title'] = '汽车贷款产品详情及申请通道';
+$config['car_loan_detail_keyword'] = '买车贷款,贷款买车,信用卡分期购车,汽车金融公司车贷,热门车型贷款方案,贷款买车流程';
+$config['car_loan_detail_description'] = '汽车贷款申请—提供信用卡分期购车,汽车金融公司车贷,银行汽车贷款等买车贷款申请,热门车型贷款方案及汽车团购—爱购金融网';
+
+//房贷详情页面
+$config['house_loan_detail_title'] = '房屋贷款产品详情及申请通道';
+$config['house_loan_detail_keyword'] = '买房贷款,住房按揭贷款,房产抵押贷款';
+$config['house_loan_detail_description'] = '房屋贷款申请-买房贷款的房贷政策,房贷流程,提前还款及房贷攻略,帮助客户实现买房贷款,房产抵押贷款和房产融资-爱购金融网';
+
+//活动详情页面
+$config['activity_detail_title'] = '爱购金融促销活动';
+$config['activity_detail_keyword'] = '免费,特惠,促销,优惠';
+$config['activity_detail_description'] = '特惠促销信息,提供最新最全的房贷,信用卡,车贷,信用贷款促销信息,帮助客户最大程度节约消费支出,早日实现财务自由尽在爱购金融网';
+
+//资讯详情页面
+$config['information_detail_title'] = '金融服务动态';
+$config['information_detail_keyword'] = '';
+$config['information_detail_description'] = '金融服务动态';
+
+//机构详情页面
+$config['instit_detail_title'] = '银行,中介机构,典当行详细信息';
+$config['instit_detail_keyword'] = '银行,中介机构,典当行';
+$config['instit_detail_description'] = '国内主要银行房屋贷款,汽车贷款,信用贷款申请,信用卡办理,信用卡分期团购在线申请';
+
+//房贷导航
+$config['house_loan_category_title'] = '房屋贷款导航-二手房,商铺,公寓,小户型贷款首选';
+$config['house_loan_category_keyword'] = '买房贷款,房贷计算,按揭利率,房屋贷款流程';
+$config['house_loan_category_description'] = '房屋贷款导航,国内最新最全的房贷自助消费平台,满足客户各种房屋贷款需求-爱购金融';
+
+//车贷导航
+$config['car_loan_category_title'] = '汽车贷款导航-新车,二手车贷款首选';
+$config['car_loan_category_keyword'] = '汽车贷款,车贷计算,买车贷款条件,汽车按揭贷款材料';
+$config['car_loan_category_description'] = '汽车贷款导航,国内领先的车贷自助消费平台,满足客户各种品牌和车型的买车贷款需求-爱购金融';
+
+//信用贷款导航
+$config['consume_loan_category_title'] = '信用贷款导航-个人无抵押贷款申请服务平台,留学,创业,消费贷款首选';
+$config['consume_loan_category_keyword'] = '信用贷款,无抵押贷款,小额贷款,信用';
+$config['consume_loan_category_description'] = '信用贷款导航,国内领先的无抵押贷款自助消费平台,渣打银行现代派,宁波银行白领通,花旗银行幸福时贷,轻松获得个人无抵押贷款就到爱购金融网';
+
+//信用卡导航
+$config['credit_card_category_title'] = '信用卡服务导航-实用便利的信用卡比对申请通道';
+$config['credit_card_category_keyword'] = '信用卡申请,信用卡选择,信用卡办理';
+$config['credit_card_category_description'] = '信用卡导航,国内领先信用卡比对申请自助平台,拥有省钱,安全,时尚又个性的信用卡就到爱购金融网';
+
+//机构导航
+$config['instit_category_title'] = '银行一览-网上银行超市,国内银行服务大全';
+$config['instit_category_keyword'] = '工商银行,招商银行,中国银行,建设银行';
+$config['instit_category_description'] = '国内银行服务大全--爱购金融网上银行超市,提供包括民生,中信,工行,招行,中行,建行,渣打等在内的知名银行的相关产品,服务特色和动态等,使网友轻松畅享银行超值服务';
+
+//活动导航
+$config['activity_category_title'] = '促销大全-最新最热的银行促销情报及优惠活动';
+$config['activity_category_keyword'] = '优惠,促销,特惠活动';
+$config['activity_category_description'] = '导航标签+特惠推荐,爱购金融,网上金融消费第一站,提供最新优惠大全';
+
+//搜索
+$config['search_title'] = '爱购金融搜索-最新最全的房贷,信用卡,车贷,汽车金融公司,无抵押信用贷款款,典当数据库就在爱购金融网';
+$config['search_keyword'] = '信用卡,房贷,车贷,信用贷款,促销活动';
+$config['search_description'] = '爱购金融搜索-提供买房贷款,车贷按揭,信用卡费用,额度,促销等实用金融信息搜索,可自由排序,比对,申请和团购';
+
+?>

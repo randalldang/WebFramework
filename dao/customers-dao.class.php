@@ -1,0 +1,41 @@
+<?php
+class CustomersDao extends BaseDao {
+
+    public function __construct() {
+        parent::__construct();
+    }
+    
+    public function getCustomersById($id) {
+        $customers = new Customers();
+        if (empty($id)) {
+          return $customers;
+        }
+        return $this->selectEntity($customers, array("id = $id"));
+    }
+    
+    public function getCustomerss($pagerOrder) {
+        return $this->selectEntities(new Customers(), NULL, $pagerOrder);
+    }
+    
+    public function addCustomers($customers) {
+        if (empty($customers)) {
+          return;
+        }
+        return $this->insertEntity($customers);
+    }
+    
+    public function updateCustomers($customers, $id) {
+        if (empty($customers) || empty($id)) {
+          return;
+        }
+        return $this->updateEntity($customers, array("id = $id"));
+    }
+    
+    public function deleteCustomers($id) {
+        if (empty($id)) {
+          return;
+        }
+        return $this->deleteEntities(new Customers(), array("id = $id"));
+    }
+}
+?>

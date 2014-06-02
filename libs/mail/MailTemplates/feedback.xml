@@ -1,0 +1,4 @@
+<email>
+<subject>来自用户的反馈信息</subject>
+<body>{$content}</body>
+</email>

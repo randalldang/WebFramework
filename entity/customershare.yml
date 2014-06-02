@@ -1,0 +1,9 @@
+connection : HorseDB
+table : CustomerShare
+fields :
+   ShareId : ShareId
+   CustomerId : CustomerId
+   ShareType : ShareType
+   SharePath : SharePath
+   ShareContext : ShareContext
+   ShareTime : ShareTime

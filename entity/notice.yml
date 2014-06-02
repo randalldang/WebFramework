@@ -1,0 +1,13 @@
+connection : HorseDB
+table : Notice
+fields :
+   NoticeId : NoticeId
+   NoticeContent : NoticeContent
+   ExpiredTime : ExpiredTime
+   CreateUserId : CreateUserId
+   CreateTime : CreateTime
+   UpdateUserId : UpdateUserId
+   UpdateTime : UpdateTime
+   Status : Status
+   AppType : AppType
+   PushStatus : PushStatus

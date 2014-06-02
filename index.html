@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>马上快递运营中心</title>
+	<link rel="stylesheet" type="text/css" href="resources/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/main.css">
+	<!--[if lt IE 9]>
+    <script src="resources/js/html5shiv.js"></script>
+    <script src="resources/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+	<div class="navbar navbar-inverse">
+		<div class="navbar-container">
+				<div class="navbar-header pull-left">
+					<a href="#" class="navbar-brand">
+							<small>
+							 <i class="fa fa-send"></i>
+							 &nbsp;马上快递运营中心
+						  </small>
+					</a>
+				</div>
+				<div class="navbar-header pull-right">
+					<ul class="nav express-nav">
+							<li class="light-blue">
+								<a href="javascript:void(0)">
+										<img class="nav-user-photo" src="resources/images/avatars/user.jpg" >
+										<span class="user-info">
+											<small>欢迎,</small>
+											<span id="display-name">Randall</span>
+										</span>
+										<i class="fa fa-arrow-circle-down"></i>
+								</a> 
+							</li>
+					</ul>
+				</div>
+		</div>
+	</div>
+	
+	
+	<div class="sidebar"></div>	
+	<div class="main-content">
+		<div class="breadcrumbs">
+			<ul class="breadcrumb">
+					<li>
+						<i class="fa fa-home"></i>
+						<a href="#">首页</a>
+					</li>
+				</ul>
+		</div>
+		<div class="page-content" id="page-content">
+					<i class="fa fa-spinner fa-5x fa-spin"></i>
+					<br/>
+					马上快递运营中心即将开启.....
+		</div>
+	</div>
+	<div class="footer"></div>
+	
+	<div id="default-templates">
+		<script id="sidebar-tmpl" type="text/x-jsrender">
+				<ul class="nav nav-list" id="nav-list">
+					{{for menuArray}}
+					<li __menucode="{{:menucode}}">
+						<a href="javascript:void(0)">
+							<i class="fa {{:icon}}"></i>
+							<span class="menu-text">{{:label}}</span>
+							<i class="arrow fa fa-angle-down"></i>
+						</a>
+						<ul class="submenu">
+							{{for subMenus}}
+								<li __menucode="{{:menucode}}">
+									<a href="javascript:void(0)">
+										<i class="fa fa-double-angle-right"></i>
+										{{:label}}
+									</a>
+								</li>
+							{{/for}}
+						</ul>
+					</li>
+					{{/for}}
+				</ul>
+		</script>
+		<script id="breadcrumb-tmpl" type="text/x-jsrender">
+				<li>
+					<i class="fa {{:icon}}"></i>
+					{{:label}}
+				</li>
+				<li><a href="javascript:void(0)" __menucode="{{:subMenucode}}">{{:subMenuLabel}}</a></li>
+		</script>
+		<script id="page-content-tmpl" type="text/x-jsrender">
+				<i class="fa fa-5x fa-spin {{:icon}}"></i>
+				敬请期待...
+		</script>
+	</div>
+	<div id="dynamic-templates"></div>
+	<script src="resources/js/jquery-1.11.1.min.js"></script>
+	<script src="resources/js/jsrender.js"></script>
+	<script src="resources/js/persenter.js"></script>
+	<script src="resources/js/view.js"></script>
+	<script src="resources/js/model.js"></script>
+	<script type="text/javascript">
+			if (window.express && window.express.admin) {
+				var presenter = new window.express.admin.Persenter(
+					new window.express.admin.View(), 
+					new window.express.admin.Model());
+				presenter.init();
+			}
+	</script>
+</body>
+</html>

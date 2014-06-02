@@ -1,0 +1,15 @@
+connection : HorseDB
+table : LoginHistory
+fields :
+   HistoryId : HistoryId
+   UserId : UserId
+   Device : Device
+   UserType : UserType
+   LoginTime : LoginTime
+   LoginIp : LoginIp
+   NetworkType : NetworkType
+   AppType : AppType
+   HistoryX : HistoryX
+   HistoryY : HistoryY
+   IMEI : IMEI
+   AppVersion : AppVersion

@@ -1,0 +1,12 @@
+connection : HorseDB
+table : advice
+fields :
+   AdviceId : AdviceId
+   UserId : UserId
+   Context : Context
+   UserType : UserType
+   CreateTime : CreateTime
+   AdviceStatus : AdviceStatus
+   UpdateUserId : UpdateUserId
+   UpdateTime : UpdateTime
+   UpdateContext : UpdateContext

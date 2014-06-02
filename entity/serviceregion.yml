@@ -1,0 +1,9 @@
+connection : HorseDB
+table : ServiceRegion
+fields :
+   RegionId : RegionId
+   ParentId : ParentId
+   RegionName : RegionName
+   DisplayOrder : DisplayOrder
+   Depth : Depth
+   status : status

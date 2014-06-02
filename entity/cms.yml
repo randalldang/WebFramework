@@ -1,0 +1,10 @@
+connection : HorseDB
+table : CMS
+fields :
+   CMSID : CMSID
+   CMSCode : CMSCode
+   CMSContext : CMSContext
+   CreateTime : CreateTime
+   CreateUserId : CreateUserId
+   EditTime : EditTime
+   EditUserIdNULL : EditUserIdNULL
