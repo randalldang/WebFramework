@@ -4,64 +4,120 @@
 	<meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>马上快递运营中心</title>
+	<title>Web Framework</title>
 	<link rel="stylesheet" type="text/css" href="resources/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="resources/css/login.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/jquery.dataTables.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/main.css">
 	<!--[if lt IE 9]>
     <script src="resources/js/html5shiv.js"></script>
     <script src="resources/js/respond.min.js"></script>
   <![endif]-->
 </head>
 <body>
-	
-</body>
-</html>
-
-	<div id="wrapper">
-		<div id="wrappertop"></div>
-
-		<div id="wrappermiddle">
-			<div class="head">
-					<i class="fa fa-send"></i>
-					<label>马上快递运营中心</label>
-			</div>
-
-			<div id="username_input">
-
-				<div id="username_inputleft"></div>
-
-				<div id="username_inputmiddle">
-					<input type="text" name="username" id="username" value="用户名">
-					<img id="username_icon" src="./resources/images/mailicon.png" alt="">
+	<div class="navbar navbar-inverse">
+		<div class="navbar-container">
+				<div class="navbar-header pull-left">
+					<a href="#" class="navbar-brand" onclick="window.location.reload()">
+							<small>
+							 <i class="fa fa-send"></i>
+							 &nbsp;Randall's Home
+						  </small>
+					</a>
 				</div>
-
-				<div id="username_inputright"></div>
-
-			</div>
-			
-			<div id="password_input">
-
-				<div id="password_inputleft"></div>
-
-				<div id="password_inputmiddle">
-					<input type="password" name="password" id="password" value="password">
-					<img id="password_icon" src="./resources/images/passicon.png" alt="">
+				<div class="navbar-header pull-right">
+					<ul class="nav express-nav">
+							<li id="nav-welcome" class="light-blue">
+								<a href="javascript:void(0)">
+										<img class="nav-user-photo" src="resources/images/avatars/user.jpg" >
+										<span class="user-info">
+											<small>欢迎,</small>
+											<span id="display-name">Randall</span>
+										</span>
+										<i class="fa fa-arrow-circle-down"></i>
+								</a> 
+								<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+								<li>
+									<a href="#"><i class="fa fa-cog"></i>设置</a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-user"></i>个人资料</a>
+								</li>
+								<li class="divider"></li>
+								<li id="logout">
+									<a href="#"><i class="fa fa-circle-o-notch"></i>退出</a>
+								</li>
+							</ul>
+							</li>
+					</ul>
 				</div>
-
-				<div id="password_inputright"></div>
-
-			</div>
-			<div class="login_error error"></div>
-			<div class="submit_div">
-				<button type="button" id="submit" class="btn btn-success submit_btn">登录</button>
-      </div>
 		</div>
-
-		<div id="wrapperbottom"></div>
-		
 	</div>
+	
+	
+	<div class="sidebar"></div>	
+	<div class="main-content">
+		<div class="breadcrumbs">
+			<ul class="breadcrumb">
+					<li>
+						<i class="fa fa-home"></i>
+						<a href="#">首页</a>
+					</li>
+				</ul>
+		</div>
+		<div class="page-content" id="page-content"></div>
+		<div class="modal-container" id="modal-container"></div>
+	</div>
+	<div class="footer">
+		Copyright &copy;马上快递
+	</div>
+	
+	<div id="default-templates">
+		<script id="sidebar-tmpl" type="text/x-jsrender">
+				<ul class="nav nav-list" id="nav-list">
+					{{for menuArray}}
+					<li __menucode="{{:menucode}}">
+						<a href="javascript:void(0)">
+							<i class="fa {{:icon}}"></i>
+							<span class="menu-text">{{:label}}</span>
+							<i class="arrow fa fa-angle-down"></i>
+						</a>
+						<ul class="submenu">
+							{{for subMenus}}
+								<li __menucode="{{:menucode}}">
+									<a href="javascript:void(0)">
+										<i class="fa fa-double-angle-right"></i>
+										{{:label}}
+									</a>
+								</li>
+							{{/for}}
+						</ul>
+					</li>
+					{{/for}}
+				</ul>
+		</script>
+		
+
+	</div>
+
+	<div id="dynamic-templates"></div>
 	<script src="resources/js/jquery-1.11.1.min.js"></script>
-	<script src="resources/js/login.js"></script>
+	<script src="resources/js/bootstrap.min.js"></script>
+	<script src="resources/js/jquery.cookie.js"></script>
+	<script src="resources/js/jsrender.js"></script>
+	<script src="resources/js/init.js"></script>
+	<script src="resources/js/model.js"></script>
+	<script src="resources/js/persenter.js"></script>
+	<script src="resources/js/view.js"></script>
+	<script src="resources/js/menu.js"></script>
+	
+	<script type="text/javascript">
+			if (window.express && window.express.admin) {
+				var presenter = new window.express.admin.Persenter(
+					new window.express.admin.View(), 
+					new window.express.admin.Model());
+				presenter.init();
+			}
+	</script>
 </body>
 </html>

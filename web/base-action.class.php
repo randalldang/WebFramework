@@ -60,7 +60,6 @@ abstract class BaseAction {
       $pagerOrder->order_by = $this->get->order_by;
       $pagerOrder->group_by = $this->get->group_by;
       $pagerOrder->total_rows = $this->get->total_rows;
-      $pagerOrder->searchKey = $this->get->searchKey;
       return $pagerOrder;
   }
 

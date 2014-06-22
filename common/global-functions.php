@@ -401,10 +401,8 @@ function get_login_user() {
     //Try to fetch user using id in cookie.
     if (NULL == $user && array_key_exists('user_cookie', $_COOKIE)) {
         $user_cookie = get_from_cookie('user_cookie', false, get_crypt_key());
-        $user = new User();
-        $user->id = (int)$user_cookie;
     }
-    return $user;
+    return $user_cookie;
 }
 
 /**

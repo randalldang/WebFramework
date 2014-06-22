@@ -5,7 +5,6 @@ class PagerOrder extends Entity {
             'cur_page' => NULL,
             'total_rows' => NULL,
             'rows_per_page' => NULL,
-            'searchKey' => NULL,
             'order_by' => '', //example: 'name ASC, age DESC'
             'group_by' => '',
         );

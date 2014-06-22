@@ -1,9 +1,0 @@
-connection : HorseDB
-table : OrderSerial
-fields :
-   SerialId : SerialId
-   SerialCode : SerialCode
-   OrderId : OrderId
-   Status : Status
-   CreateTime : CreateTime
-   CourierId : CourierId

@@ -13,8 +13,8 @@ class CustomersService extends BaseService {
         return $this->customersDao->getCustomersById($id);
     }
     
-    public function getCustomerss($pagerOrder) {
-        return $this->customersDao->getCustomerss($pagerOrder);
+    public function getCustomerss($searchKey, $pagerOrder) {
+        return $this->customersDao->getCustomerss($searchKey, $pagerOrder);
     }
     
     public function addCustomers($customers) {

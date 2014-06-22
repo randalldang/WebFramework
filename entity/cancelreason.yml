@@ -1,9 +1,0 @@
-connection : HorseDB
-table : CancelReason
-fields :
-   ReasonId : ReasonId
-   Reason : Reason
-   DisplayOrder : DisplayOrder
-   CreateUserId : CreateUserId
-   CreateTime : CreateTime
-   Status : Status

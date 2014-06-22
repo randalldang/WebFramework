@@ -10,7 +10,7 @@ class IndexAction extends BaseAction {
     }
 
     function doGet() {
-        echo file_get_contents("main.html");
+        echo file_get_contents("index.html");
     }
 
     public function doPost(){

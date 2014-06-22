@@ -13,12 +13,12 @@ class CustomersDao extends BaseDao {
         return $this->selectEntity($customers, array("CustomerId = $id"));
     }
     
-    public function getCustomerss($pagerOrder) {
+    public function getCustomerss($searchKey, $pagerOrder) {
         $customer = new Customers();
         $conditions = null;
 
-        if (strlen($pagerOrder->searchKey) > 0) {
-            $conditions = array("CustomerCode = '$pagerOrder->searchKey'");
+        if (strlen($searchKey) > 0) {
+            $conditions = array("CustomerCode = '$searchKey'");
         }
         return new EntityPager($this->selectEntities($customer, $conditions, $pagerOrder)
             , $this->getTotal($customer, $conditions));

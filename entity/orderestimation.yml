@@ -1,9 +1,0 @@
-connection : HorseDB
-table : OrderEstimation
-fields :
-   EstimationId : EstimationId
-   OrderId : OrderId
-   CustomerId : CustomerId
-   Score : Score
-   EstimationTime : EstimationTime
-   Remark : Remark

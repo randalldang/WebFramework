@@ -16,13 +16,13 @@ class CustomersAction extends BaseAction {
         if (!empty($id)) {
             echo $this->customersService->getCustomersById($id)->toJson();
         } else {    
+            $searchKey = $this->get->searchKey;
             echo $this->toJsonPager($this->customersService->
-                getCustomerss($this->getPagerOrder()));
+                getCustomerss($searchKey, $this->getPagerOrder()));
         }
     }
 
     public function doPost(){
-        $id = $this->get->id;
     }
 }
 

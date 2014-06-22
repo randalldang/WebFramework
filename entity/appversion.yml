@@ -1,9 +1,0 @@
-connection : HorseDB
-table : AppVersion
-fields :
-   VesionId : VesionId
-   Vesion : Vesion
-   AppType : AppType
-   CreateTime : CreateTime
-   AppFile : AppFile
-   IsUpgrade : IsUpgrade
