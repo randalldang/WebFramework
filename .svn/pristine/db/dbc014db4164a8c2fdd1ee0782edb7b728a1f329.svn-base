@@ -1,0 +1,159 @@
+html {
+	min-height: 100%;
+}
+body {
+	height: 100%;
+	position: relative;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #888;
+	font-size: 13px;
+	line-height: 20px;
+	min-width: 998px;
+	border-top:3px solid #919191;
+	background:url(../images/login_bg.jpg) repeat;
+}
+
+#wrapper {
+	padding: 100px 0 0 0px;
+	height: 100%;
+	width: 350px;
+	margin:auto;
+	position: relative;
+}
+
+#wrappertop {
+	background:url(../images/wrapper_top.png) no-repeat;
+	height:22px;
+}
+
+#wrappermiddle {
+	background:url(../images/wrapper_middle.png) repeat-y;
+	height:240px;
+}
+
+#wrapperbottom {
+	background:url(../images/wrapper_bottom.png) no-repeat;
+	height:22px;
+}
+
+.head{
+	text-align: center;
+}
+
+#username_input {
+	margin-left:25px;
+	width:300;
+	height:50px;
+	margin-top:20px;
+}
+
+#username_inputleft {
+	float:left;
+	background:url(../images/input_left.png) no-repeat;
+	width:12px;
+	height:50px;
+}
+
+#username_inputmiddle {
+	float:left;
+	background:url(../images/input_middle.png) repeat-x;
+	width:276px;
+	height:50px;
+}
+
+#username_inputmiddle:focus {
+	outline: 0 solid transparent;
+	border:  0;
+}
+
+#username_inputright {
+	float:left;
+	background:url(../images/input_right.png) no-repeat;
+	width:12px;
+	height:50px;
+}
+
+.login_error{
+	text-align: center;
+	height: 20px;
+	padding-top: 5px;
+	color: red;
+}
+
+#username{
+	display:block;
+	width:276px;
+	height:45px;
+	background:transparent;
+	border:0;
+	color:#bdbdbd;
+	font-family:helvetica, sans-serif;
+	font-size:14px;
+	padding-left:20px;
+}
+
+#username_icon {
+	position:absolute;
+	display:block;
+	margin-top:-28px;
+	float:left;
+	padding-right:10px;
+}
+
+#password_input {
+	margin-left:25px;
+	width:300;
+	height:50px;
+	margin-top:25px;
+}
+
+#password_inputleft {
+	float:left;
+	background:url(../images/input_left.png) no-repeat;
+	width:12px;
+	height:50px;
+}
+
+#password_inputmiddle {
+	float:left;
+	background:url(../images/input_middle.png) repeat-x;
+	width:276px;
+	height:50px;
+}
+
+#password_inputright {
+	float:left;
+	background:url(../images/input_right.png) no-repeat;
+	width:12px;
+	height:50px;
+}
+
+#password{
+	display:block;
+	width:276px;
+	height:45px;
+	background:transparent;
+	border:0;
+	color:#bdbdbd;
+	font-family:helvetica, sans-serif;
+	font-size:14px;
+	padding-left:20px;
+}
+
+#password_icon {
+	display:block;
+	position:absolute;
+	margin-top:-32px;
+	float:left;
+	margin-left:4px;
+}
+
+.submit_div{
+	margin: 10px 0 0 25px;
+}
+
+.submit_btn{
+	width: 297px;
+	height: 40px;
+}
+

@@ -30,13 +30,37 @@ abstract class BaseAction {
       return '[' . implode($result, ',') . ']';
   }
 
+  public function toJsonPager($entityPager){
+      $count = $entityPager->count;
+      $entities = $entityPager->entities;
+      $entityJsonArray = array();
+      if (!empty($entities)) {
+          foreach ($entities as $entity) {
+              $entityJsonArray[] = $entity->getData();
+          }
+      }    
+
+      return Json::jsonEncode(array("count" => $count,
+          "entities" => $entityJsonArray));
+  }
+
   protected function getPagerOrder(){
       $pagerOrder = new PagerOrder();
-      $pagerOrder->cur_page = $this->get->cur_page;
-      $pagerOrder->rows_per_page = $this->get->rows_per_page;
+      if (is_null($this->get->cur_page)) {
+        $pagerOrder->cur_page = 1;
+      } else {
+        $pagerOrder->cur_page = $this->get->cur_page;
+      }
+      if (is_null($this->get->rows_per_page)) {
+        $pagerOrder->rows_per_page = 10;
+      } else {
+        $pagerOrder->rows_per_page = $this->get->rows_per_page;
+      }
+
       $pagerOrder->order_by = $this->get->order_by;
       $pagerOrder->group_by = $this->get->group_by;
       $pagerOrder->total_rows = $this->get->total_rows;
+      $pagerOrder->searchKey = $this->get->searchKey;
       return $pagerOrder;
   }
 
@@ -48,8 +72,7 @@ abstract class BaseAction {
                   $this->validation_result = TRUE;
 
                   return TRUE;
-              }
-              else {
+              } else {
                   $this->validation_result = FALSE;
 
                   return FALSE;
@@ -63,6 +86,11 @@ abstract class BaseAction {
 
           return TRUE;
       }
+  }
+
+  public function validationFailAction(){
+    header("Location: /express");
+    die();
   }
 }
 ?>

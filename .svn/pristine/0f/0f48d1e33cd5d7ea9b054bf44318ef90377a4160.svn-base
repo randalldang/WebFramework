@@ -1,0 +1,11 @@
+connection : HorseDB
+table : CourierTracking
+fields :
+   CourierTrackingId : CourierTrackingId
+   CourierId : CourierId
+   Province : Province
+   City : City
+   District : District
+   TrackingX : TrackingX
+   TrackingY : TrackingY
+   TrackingTime : TrackingTime

@@ -10,11 +10,18 @@ class CustomersDao extends BaseDao {
         if (empty($id)) {
           return $customers;
         }
-        return $this->selectEntity($customers, array("id = $id"));
+        return $this->selectEntity($customers, array("CustomerId = $id"));
     }
     
     public function getCustomerss($pagerOrder) {
-        return $this->selectEntities(new Customers(), NULL, $pagerOrder);
+        $customer = new Customers();
+        $conditions = null;
+
+        if (strlen($pagerOrder->searchKey) > 0) {
+            $conditions = array("CustomerCode = '$pagerOrder->searchKey'");
+        }
+        return new EntityPager($this->selectEntities($customer, $conditions, $pagerOrder)
+            , $this->getTotal($customer, $conditions));
     }
     
     public function addCustomers($customers) {

@@ -112,7 +112,6 @@ class BaseDao {
 		db_set_active ( $entity->connection );
 	
 		$sql = $this->toSelectSql ( $entity, $condition );
-
 		$result = db_query ( $sql );
 		if (FALSE != $result) {
 			if (db_num_rows ( $result ) > 0) {
@@ -172,10 +171,6 @@ class BaseDao {
 		}
 		
 		$sql = $this->toSelectSql ( $entity, $condition, $others );
-		
-		//$log_file = "sql.txt";
-		//file_put_contents($log_file, "SQL: " . $sql ."\r\n", FILE_APPEND);
-		
 
 		$result = db_query ( $sql );
 		$entities = array ();
@@ -195,6 +190,23 @@ class BaseDao {
 		
 
 		return $entities;
+	}
+
+	/**
+	 * Atom function used to get total count from database table.
+	 * @param $entity object extends from Entity, it is the PO object.
+	 * @param mixed $condition array or string specifies conditions
+	 * @return total count
+	 */
+	protected function getTotal(Entity $entity, $condition = NULL) {
+		$this->iniYmlSetting ( $entity );
+		db_set_active ( $entity->connection );
+		
+		$field = "count(*)";
+		$sql = Convert::toSqlSelect ($entity->table, array($field), $condition);
+		$row = db_fetch_array (db_query ( $sql ));
+
+		return intval($row[$field]);
 	}
 	
 	/**

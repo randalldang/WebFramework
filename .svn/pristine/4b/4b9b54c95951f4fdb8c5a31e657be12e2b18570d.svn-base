@@ -1,0 +1,11 @@
+connection : HorseDB
+table : CourierActivity
+fields :
+   ActivityId : ActivityId
+   CourierId : CourierId
+   StartTime : StartTime
+   EndTime : EndTime
+   StartX : StartX
+   StartY : StartY
+   EndX : EndX
+   EndY : EndY

@@ -15,15 +15,16 @@ class CustomersAction extends BaseAction {
         $id = $this->get->id;
         if (!empty($id)) {
             echo $this->customersService->getCustomersById($id)->toJson();
-        } else {         
-            echo $this->toJsonArray($this->customersService->
+        } else {    
+            echo $this->toJsonPager($this->customersService->
                 getCustomerss($this->getPagerOrder()));
         }
     }
 
     public function doPost(){
+        $id = $this->get->id;
     }
 }
 
-run_admin('CustomersAction');
+run('CustomersAction');
 ?>
